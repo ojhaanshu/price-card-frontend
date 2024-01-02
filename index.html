@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>price card frontend</title>
+    <style>
+     html{
+  box-sizing:border-box;
+}
+*, *:before, *:after{
+  box-sizing:inherit;
+ // margin:0px;
+}
+body{
+  padding:30px;
+  font-family:"karla";
+  font-size:16px;
+}
+.main{
+  box-shadow: -2px 7px 14px -1px rgba(0,0,0,0.75);
+  border-radius:10px;
+  overflow:hidden;
+  height:400px;
+  width:600px;
+  margin:0px;
+  padding:0px;
+  
+}
+
+.top{
+ // background-color:blue;
+  height:45%;
+  width:100%;
+  box-sizing:border-box;
+  padding:25px;
+  //padding-left:30px;
+  font-size:1rem;
+}
+.main2{
+  color:white;
+  height:55%;
+  weight:100%;
+  display:flex;
+}
+
+
+#box1{
+  background-color:#40E0BD;
+  height:100%;
+  width:50%;
+ //display:inline-block;
+   box-sizing:border-box;
+ // vertical-align:top;
+// margin:0px;
+  padding:30px
+}
+#box2{
+  background-color:#7EE0B3;
+  height:100%;
+  width:50%;
+  //display:inline-block;
+  box-sizing:border-box;
+  //vertical-align:top;
+  padding-left:30px
+  
+}
+#price{
+  font-size:30px;
+  display:inline-block;
+}
+#frequency{
+display:inline-block;
+position:relative;
+top:-3px;
+padding:5px;
+}
+.top h3{
+  color:#E6E337;
+}
+.top h2{
+  color:#40E0BD;
+}
+button{
+  background-color:#E6E337;
+  border:none;
+  padding:10px;
+  margin:2px;
+  width:100%;
+  border-radius:5px;
+  color:white;
+}
+button:hover{
+  cursor:pointer;
+  background-color:white;
+  color:#E6E337;
+  transform:scale(1.05);
+}
+#box1 p{
+  margin:0px;
+}
+ul{
+  margin:0px;
+  padding:0px;
+  font-size:14px;
+  list-style-type: none;
+}
+@media(max-width:600px){
+  .main2{
+    flex-direction:column;
+  }
+  #box1, #box2,.main{
+    width:100%;
+    height:auto;
+
+  }
+}
+
+    </style>
+  </head>
+  <body>
+<div class="main">
+  <div class="top">
+    <h2>join Our Community</h2> 
+    <h3>30-day,hassle-free money back gurantee</h3>
+    <p>Gain access to our full liabrary of tutorials along with expert code reviews<br>perfect for any developer </p></div>
+  <div class =main2>
+     <div class="1box" id="box1">
+       <h3>Monthly Subscription</h3>
+       <div id="price">$29</div>
+       <div id="frequency">per month</div>
+       <p>full access for less than a $1 a day</p>
+       <button onclick="alertUser()">Sign up</button>
+        
+       </div>
+  <div class="2box" id="box2">
+  <h3>Why us</h3>
+  <ul>
+    <li>Tutorial by industrial experts</li>
+    <li>peer and expert code review</li>
+    <li>coding exercises</li>
+     <li> Access to our Github repos </li>
+     <li>community forum</li>
+     <li> flashcard ducks</li>
+    <li>new videos every week</li>
+  </ul>
+ </div>
+  </div>
+</div>
+     <script src="./script.js"></script>
+  </body>
+</html>
